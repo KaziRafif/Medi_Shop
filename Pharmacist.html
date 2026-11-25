@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="stylesheet" href="style/style.css">
+
+    <title>MediShop Admin - Pharmacists</title>
+</head>
+<body>
+    
+    <h1>MediShop Admin</h1>
+    <p>Admin panel</p>
+    
+    <div>
+        <a href="Admindeshboard.html">Dashboard</a>
+        <a href="Medicines.html">Medicines</a>
+        <a href="Categories.html">Categories</a>
+        <a href="Orders.html">Orders</a>
+        <a href="Review.html">Reviews</a>
+        <a href="Customer.html">Customers</a>
+        <a href="Pharmacist.html">Pharmacist</a>
+        <a href="Expiryanddamaged.html">Expiry & Damaged</a>
+        <a href="#" class="logout">Logout</a>
+    </div>
+    
+    
+    <fieldset>
+        <legend>
+            <h2>Pharmacists</h2>
+        </legend>
+        <p>Approve and manage pharmacists</p>
+        
+        
+        <table border="1" width="100%">
+            <tr>
+                <th>NAME</th>
+                <th>LICENSE NO.</th>
+                <th>EMAIL</th>
+                <th>STATUS</th>
+                <th>ACTION</th>
+            </tr>
+            <tr align="center">
+                <td>Dr. Rafi</td>
+                <td>58964</td>
+                <td>rafi@gmail.com</td>
+                <td><span class="status pending">Pending</span></td>
+                <td>
+                    <input type="button" class="green" value="Approve">
+                    <input type="button" class="danger" value="Reject">
+                </td>
+            </tr>
+            <tr align="center">
+                <td>sifa</td>
+                <td>55888</td>
+                <td>sifa@gmail.com</td>
+                <td><span class="status ok">Active</span></td>
+                <td>
+                    <input type="button" class="danger" value="Suspend">
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+
+</body>
+</html>

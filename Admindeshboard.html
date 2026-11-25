@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style/style.css">
+    
+    <title>MediShop Admin Dashboard</title>
+</head>
+<body>
+    
+    <h1>MediShop Admin</h1>
+    
+    <div>
+    <a href="Admindeshboard.html">Dashboard</a>
+    <a href="Medicines.html">Medicines</a>
+    <a href="Categories.html">Categories</a>
+    <a href="Orders.html">Orders</a>
+    <a href="Review.html">Reviews</a>
+    <a href="Customer.html">Customers</a>
+    <a href="Pharmacist.html">Pharmacist</a>
+    <a href="Expiryanddamaged.html">Expiry & Damaged</a>
+    <a href="#" class="logout">Logout</a>
+    </div>
+    
+    
+    
+    <fieldset>
+        <legend>
+            <h2>Dashboard</h2>
+        </legend>
+        <p>Welcome back, Administrator</p>
+
+    </fieldset>
+
+    
+    <fieldset>
+        <legend>
+            <h3>Statistics</h3>
+        </legend>
+        <table border="1" width="100%">
+            <tr>
+                <td>
+                    <h2>6</h2>
+                    <label>Total Medicines</label>
+                </td>
+                <td>
+                    <h2>0</h2>
+                    <label>Registered Customers</label>
+                </td>
+                <td>
+                    <h2>0</h2>
+                    <label>Total Orders</label>
+                </td>
+                <td>
+                    <h2>0</h2>
+                    <label>Pending Orders</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>0</h2>
+                    <label>Reviews Awaiting Approval</label>
+                </td>
+                <td>
+
+                    <h2>0</h2>
+                    <label>New Feedback</label>
+                </td>
+                <td>
+                    <h2>2</h2>
+                    <label>Expiring Soon</label>
+                </td>
+                <td>
+                    <h2>0</h2>
+                    <label>Damaged Stock</label>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+    
+
+    <fieldset>
+        <legend>
+            <h3>Recent Orders</h3>
+        </legend>
+        <table border="1" width="100%">
+            <tr>
+                <th>ID</th>
+                <th>CUSTOMER</th>
+                <th>TOTAL</th>
+                <th>PAYMENT</th>
+                <th>DATE</th>
+                <th>STATUS</th>
+                <th>ACTION</th>
+            </tr>
+            <tr>
+                <td colspan="7" align="center">
+                    <br>No orders yet<br><br>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+
+   
+    <fieldset>
+        <legend><h3>Quick Actions</h3></legend>
+        <input type="button" value="+ Add Medicine">
+        <input type="button" value="+ Add Category">
+        <input type="button" value="Manage Orders">
+        <input type="button" value="Manage Pharmacists">
+        <input type="button" value="Manage Suppliers">
+    </fieldset>
+
+    
+
+</body>
+</html>

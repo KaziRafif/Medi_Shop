@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style/style.css">
+
+    
+    <title>Manage Categories</title>
+</head>
+<body>
+
+    
+    <h1>MediShop Admin</h1>
+    <div>
+   <a href="Admindeshboard.html">Dashboard</a>
+    <a href="Medicines.html">Medicines</a>
+    <a href="Categories.html">Categories</a>
+    <a href="Orders.html">Orders</a>
+    <a href="Review.html">Reviews</a>
+    <a href="Customer.html">Customers</a>
+    <a href="Pharmacist.html">Pharmacist</a>
+    <a href="Expiryanddamaged.html">Expiry & Damaged</a>
+    <a href="#" class="logout">Logout</a>
+    </div>
+    
+    <hr>
+
+    <h2>Manage Categories</h2>
+    <p>Organize medicines by category </p>
+
+  
+    <fieldset>
+        <legend>
+            <h3> Add New Category</h3>
+        </legend>
+        <form>
+            <label>Category Name </label><br>
+            <input type="text" placeholder="Painkiller">
+            <br><br>
+
+            <label>Type </label><br>
+            <select>
+                <option>Select Type</option>
+                <option>Liquid</option>
+                <option>Solid</option>
+            </select>
+            <br><br>
+
+            <button>Save category</button>
+            
+        </form>
+    </fieldset>
+
+
+    <fieldset>
+        <legend>
+            <h3>All Categories (6 total)</h3>
+        </legend>
+        
+       
+        <table border="1">
+            <tr>
+                <th>Sr.</th>
+                <th>CATEGORY NAME</th>
+                <th>TYPE</th>
+                <th>CREATED</th>
+                <th>ACTIONS</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>
+                    <b>Antiseptic</b>
+                </td>
+                <td>Liquid</td>
+                <td>24 Oct 2026</td>
+                <td>
+                    <button>Edit</button> 
+                    <button class="danger">Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>
+                    <b>Vitamin</b>
+                </td>
+                <td>Solid</td>
+                <td>24 Oct 2026</td>
+                <td>
+                    <button>Edit</button> 
+                    <button class="danger">Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>
+                    <b>Napa Syrup</b>
+                </td>
+                <td>Liquid</td>
+                <td>24 Oct 2026</td>
+                <td>
+                    <button>Edit</button> 
+                    <button class="danger">Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>
+                    <b>Glavisol Syrup</b>
+                </td>
+                <td>Liquid</td>
+                <td>24 Oct 2026</td>
+                <td>
+                    <button>Edit</button> 
+                    <button class="danger">Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>
+                    <b>Antibiotic</b>
+                </td>
+                <td>Solid</td>
+                <td>24 Oct 2026</td>
+                <td>
+                    <button>Edit</button> 
+                    <button class="danger">Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>
+                    <b>Painkiller</b>
+                </td>
+                <td>Solid</td>
+                <td>24 Oct 2026</td>
+                <td>
+                    <button>Edit</button> 
+                    <button class="danger">Delete</button>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+
+</body>
+</html>
