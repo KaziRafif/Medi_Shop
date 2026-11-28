@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style/style.css">
+
+    <title>MediShop Admin - Customers</title>
+</head>
+<body>
+    
+    <h1>MediShop Admin</h1>
+    <p>Admin panel</p>
+    
+    <div>
+        <a href="Admindeshboard.html">Dashboard</a>
+        <a href="AdminMedicines.html">Medicines</a>
+        <a href="AdminCategories.html">Categories</a>
+        <a href="AdminOrders.html">Orders</a>
+        <a href="AdminReview.html">Reviews</a>
+        <a href="AdminCustomer.html">Customers</a>
+        <a href="AdminPharmacist.html">Pharmacist</a>
+        <a href="AdminExpiryanddamaged.html">Expiry & Damaged</a>
+        <a href="#" class="logout">Logout</a>
+    </div>
+    
+    
+    <fieldset>
+        <legend>
+            <h2>Customers</h2>
+        </legend>
+        <p>All registered customers</p>
+        
+        
+        <form>
+            <input type="text" placeholder="Search customer" size="20">
+            <input type="submit" value="search">
+        </form>
+
+        
+        
+        <table border="1" width="100%">
+            <tr>
+                <th>NAME</th>
+                <th>EMAIL</th>
+                <th>PHONE</th>
+                <th>ORDERS</th>
+                <th>ACTION</th>
+            </tr>
+            <tr align="center">
+                <td>Rafi</td>
+                <td>rafi@mail.com</td>
+                <td>01924761358</td>
+                <td>3</td>
+                <td>
+                    <input type="button" value="View">
+                    <input type="button" class="danger" value="Block">
+                </td>
+            </tr>
+            <tr align="center">
+                <td>Sifa</td>
+                <td>sifa@mail.com</td>
+                <td>01621019860</td>
+                <td>1</td>
+                <td>
+                    <input type="button" value="View">
+                    <input type="button" class="danger" value="Block">
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+    <script src="js/script.js"></script>
+</body>
+</html>

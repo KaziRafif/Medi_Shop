@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style/style.css">
+    
+    <title>Admin-Medicines</title>
+    <style>
+        .id{
+            margin:0;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>MediShop Admin</h1>
+    
+    <div>
+        <a href="Admindeshboard.html">Dashboard</a>
+        <a href="AdminMedicines.html">Medicines</a>
+        <a href="AdminCategories.html">Categories</a>
+        <a href="AdminOrders.html">Orders</a>
+        <a href="AdminReview.html">Reviews</a>
+        <a href="AdminCustomer.html">Customers</a>
+        <a href="AdminPharmacist.html">Pharmacist</a>
+        <a href="AdminExpiryanddamaged.html">Expiry & Damaged</a>
+        <a href="#" class="logout">Logout</a>
+    </div>
+    
+    <fieldset>
+        <legend>
+            <h2>Medicines</h2>
+        </legend>
+        <p class="id">Add, edit, search</p>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>
+            <h3>Add new medicine</h3>
+        </legend>
+        <form>
+            <table width="100%">
+                <tr>
+                    <td>
+                        <label>Medicine name *</label><br>
+                        <input type="text" size="20">
+                    </td>
+                    <td>
+                        <label>Category *</label><br>
+                        <select>
+                            <option>Antiseptic</option>
+                            <option>Painkiller</option>
+                            <option>Vitamin</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label>Vendor name</label><br>
+                        <input type="text" size="20">
+                    </td>
+                    <td>
+                        <label>Price</label><br>
+                        <input type="text" size="10">
+                    </td>
+                    <td>
+                        <label>Stock quantity</label><br>
+                        <input type="text" size="10">
+                    </td>
+                    <td>
+                        <label>Medicine image</label><br>
+                        <input type="file">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <br><label>Expiry date</label><br>
+                        <input type="date">
+                    </td>
+                    <td colspan="5">
+                        <br><label>Low stock alert threshold</label><br>
+                        <input type="text" size="10">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="6">
+                        <br>
+                        <label>Description</label>
+                        <br>
+                        
+                        <textarea rows="4" cols="100" style="width: 100%"></textarea>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <input type="button" value="Save medicine">
+            <input type="button" value="Cancel">
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>
+            <h3>All medicines</h3>
+        </legend>
+        <form>
+            <input type="text" placeholder="Search medicine" size="40">
+        </form>
+        <br>
+        <table border="1" width="100%">
+            <tr>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Vendor</th>
+                <th>Price</th>
+                <th>Stock</th>
+                <th>Expiry</th>
+                <th>Action</th>
+            </tr>
+            <tr align="center">
+                <td>Savlon 100ml</td>
+                <td>Antiseptic</td>
+                <td>ACI</td>
+                <td> 85 tk</td>
+                <td>42</td>
+                <td>Mar 2028</td>
+                <td>
+                    <input type="button" value="Edit">
+                    <input type="button" value="Delete">
+                </td>
+            </tr>
+            <tr align="center">
+                <td>Napa 500mg</td>
+                <td>Painkiller</td>
+                <td>Beximco</td>
+                <td>5 tk</td>
+                <td>8 <span style="color:red; font-size:12px;">Low</span></td>
+                <td>Jan 2027</td>
+                <td>
+                    <input type="button" value="Edit">
+                    <input type="button" value="Delete">
+                </td>
+            </tr>
+            <tr align="center">
+                <td>Vitamin C</td>
+                <td>Vitamin</td>
+                <td>Square</td>
+                <td>20 tk</td>
+                <td>60</td>
+                <td>Dec 2026 <span style="color:orange; font-size:12px;">Expiring</span></td>
+                <td>
+                    <input type="button" value="Edit">
+                    <input type="button" value="Delete">
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+    <script src="js/script.js"></script>
+</body>
+</html>
